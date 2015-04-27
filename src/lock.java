@@ -18,17 +18,16 @@ public class lock {
 	 * and the specified key position
 	 *
 	 * @param int k is the specified position for the lockpick to open
-	 * @param int r the rank of the lock r>=1 && r<=6
+	 * @param int r the rank of the lock r>=1 && r<=5
 	 */
 	public lock(int k, int r){
 		key =k;
 		rank =r;
-		if(rank==1){pos=3-1;}
-		else if(rank==2){pos=9-1;}
-		else if(rank==3){pos=17-1;}
-		else if(rank==4){pos=27-1;}
-		else if(rank==5){pos=39-1;}
-		else if(rank==6){pos=179-1;}
+                if(rank==1){pos=9-1;}
+		else if(rank==2){pos=17-1;}
+		else if(rank==3){pos=27-1;}
+		else if(rank==4){pos=39-1;}
+		else if(rank==5){pos=179-1;}
 		rust =(int)(Math.random()*5);
 	}
 	
@@ -41,12 +40,11 @@ public class lock {
 	 */
 	public lock(int r){
 		rank =r;
-		if(rank==1){pos=3;}
-		else if(rank==2){pos=9;}
-		else if(rank==3){pos=17;}
-		else if(rank==4){pos=27;}
-		else if(rank==5){pos=39;}
-		else if(rank==6){pos=179;}
+		if(rank==1){pos=9-1;}
+		else if(rank==2){pos=17-1;}
+		else if(rank==3){pos=27-1;}
+		else if(rank==4){pos=39-1;}
+		else if(rank==5){pos=179-1;}
 		key =(int)(Math.random()*pos);
 		rust =(int)(Math.random()*5);
 	}
