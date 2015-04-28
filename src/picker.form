@@ -85,7 +85,6 @@
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="21" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="mediumB" min="-2" pref="298" max="-2" attributes="0"/>
@@ -98,6 +97,7 @@
                       <Component id="veryHardB" min="-2" pref="298" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -163,6 +163,9 @@
           <Image iconType="3" name="/org/me/myimageapp/difficulties/focused/impossible.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="impossibleBMouseClicked"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="tablePane">
       <AuxValues>

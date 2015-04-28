@@ -75,6 +75,11 @@ public class picker extends javax.swing.JFrame {
         impossibleB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/me/myimageapp/difficulties/basic/impossible.jpg"))); // NOI18N
         impossibleB.setAlignmentY(0.0F);
         impossibleB.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/org/me/myimageapp/difficulties/focused/impossible.png"))); // NOI18N
+        impossibleB.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                impossibleBMouseClicked(evt);
+            }
+        });
 
         statTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -165,8 +170,7 @@ public class picker extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel16)
-                        .addContainerGap(21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel16))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(mediumB, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -174,7 +178,8 @@ public class picker extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(practiceB, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(veryHardB, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(veryHardB, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
 
         pack();
@@ -191,6 +196,10 @@ public class picker extends javax.swing.JFrame {
     private void mediumBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mediumBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mediumBActionPerformed
+
+    private void impossibleBMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_impossibleBMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_impossibleBMouseClicked
 
     /**
      * @param args the command line arguments
