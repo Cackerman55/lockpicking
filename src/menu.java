@@ -8,12 +8,12 @@
  *
  * @author Colin
  */
-public class picker extends javax.swing.JFrame {
+public class menu extends javax.swing.JFrame {
 
     /**
      * Creates new form picker
      */
-    public picker() {
+    public menu() {
         initComponents();
     }
 
@@ -231,7 +231,7 @@ public class picker extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new picker().setVisible(true);
+                new menu().setVisible(true);
             }
         });
     }

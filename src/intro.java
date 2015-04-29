@@ -171,7 +171,7 @@ public class intro extends javax.swing.JFrame {
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
         this.setVisible(false);
-        new picker().setVisible(true);
+        new menu().setVisible(true);
         // TODO add your handling code here:
         
         
