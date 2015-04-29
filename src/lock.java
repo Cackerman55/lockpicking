@@ -10,8 +10,9 @@ public class lock {
 	private int rank;
 	private int pos;
 	private int rust;
+        public double time;
 	
-	//pos must always be an odd number >=3
+	//pos must always be an odd number >=9
 	
 	/**
 	 * Generates a lock based off of a given rank
@@ -23,12 +24,13 @@ public class lock {
 	public lock(int k, int r){
 		key =k;
 		rank =r;
-                if(rank==1){pos=9-1;}
-		else if(rank==2){pos=17-1;}
-		else if(rank==3){pos=27-1;}
-		else if(rank==4){pos=39-1;}
-		else if(rank==5){pos=179-1;}
+                if(rank==1){pos=9;}
+		else if(rank==2){pos=17;}
+		else if(rank==3){pos=27;}
+		else if(rank==4){pos=39;}
+		else if(rank==5){pos=179;}
 		rust =(int)(Math.random()*5);
+                time = 0;
 	}
 	
 	
@@ -40,13 +42,34 @@ public class lock {
 	 */
 	public lock(int r){
 		rank =r;
-		if(rank==1){pos=9-1;}
-		else if(rank==2){pos=17-1;}
-		else if(rank==3){pos=27-1;}
-		else if(rank==4){pos=39-1;}
-		else if(rank==5){pos=179-1;}
+		if(rank==1){pos=9;}
+		else if(rank==2){pos=17;}
+		else if(rank==3){pos=27;}
+		else if(rank==4){pos=39;}
+		else if(rank==5){pos=179;}
 		key =(int)(Math.random()*pos);
 		rust =(int)(Math.random()*5);
+                time = 0;
 	}
+        
+        public int getKey(){
+            return key;
+        }
+        
+        public int getRust(){
+            return rust;
+        }
+        
+        public double getTime(){
+            return time;
+        }
+        
+        public int getRank(){
+            return rank;
+        }
+        
+        public int getPos(){
+            return pos;
+        }
 
 }
